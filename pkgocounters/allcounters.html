@@ -104,11 +104,12 @@ body {
 					smartphone explode. I decline all responsibility.
 				<h2>How to use it</h2>
 				<p>
-					The table is sorted by Total Bonus. Input the desired filters
-					(don'have to be entire word) in the top row, then press Enter and
-					lay back a second or two.<br />The data won't be filtered until
-					press Enter.<br/>
-					<strong>Example:</strong> input 'Vap' in the 'Defenders' column filter and press Enter. Best counters are sorted top to bottom.
+					Input the desired <strong>filters</strong> (don'have to be entire word) in the top
+					row, then press Enter and lay back a second or two.<br />The data
+					won't be filtered until press Enter.<br /> <strong>Example:</strong>
+					input 'Vap' in the 'Defenders' column filter and press Enter. Best
+					counters are sorted top to bottom.<br /> Click a column header to
+					<strong>order</strong> by its values.
 				<h3>Have fun!</h3>
 				<hr />
 			</div>
@@ -156,7 +157,14 @@ body {
 						el.outerHTML = xmlhttp.responseText;
 						var tf = new TableFilter(document
 								.querySelector('#counters'), {
-							base_path : 'js/tablefilter/'
+							base_path : 'js/tablefilter/',
+							extensions : [ {
+								name : 'sort',
+								flt_css_class: 'form-control',
+								types : [ 'string', 'string', 'string',
+										'string', 'string', 'string', 'number',
+										'number', 'number' ]
+							} ]
 						});
 						tf.init();
 					}
