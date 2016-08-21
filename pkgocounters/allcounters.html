@@ -3,139 +3,174 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+<title>Bare - Start Bootstrap Template</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
+<!-- Custom CSS -->
+<style>
+body {
+	padding-top: 70px;
+	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+</style>
 
 
-    <!-- 	<script src="js/csi.min.js"></script> -->
-    <script src="js/tablefilter/tablefilter.js"></script>
-    
-    <!-- jQuery Version 1.11.1 -->
-    <!--     <script src="js/jquery.js"></script> -->
+<!-- 	<script src="js/csi.min.js"></script> -->
+<script src="js/tablefilter/tablefilter.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <!--     <script src="js/bootstrap.min.js"></script> -->
+<!-- jQuery Version 1.11.1 -->
+<!--     <script src="js/jquery.js"></script> -->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<!-- Bootstrap Core JavaScript -->
+<!--     <script src="js/bootstrap.min.js"></script> -->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><span><img src="static/pokeball30.png" /></span> mtrycz's Pokemon GO counter calculations</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="index.html">Hard Counters</a>
-                        </li>
-                        <li>
-                            <a href="allcounters.html">All Counters (SLOW!)</a>
-                        </li>
-                        <li>
-                            <a href="#">Info (todo)</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span><img
+						src="static/pokeball30.png" /></span> mtrycz's Pokemon GO counter
+					calculations</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Hard Counters</a></li>
+					<li><a href="allcounters.html">All Counters (SLOW!)</a></li>
+					<li><a href="#">Info (todo)</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
 
-        <!-- Page Content -->
-        <div class="container">
+	<!-- Page Content -->
+	<div class="container">
 
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                   
-                   Info
-                   <hr />
-                   <div data-include="results_table1563.html">Loading 12,389 rows <img class="loading-ball" src="static/pokeball30.png" /> This will take some time... </div>
-               </div>
-               <!-- /.row -->
-               
-           </div>
-           <!-- /.container -->
-           
-           
-           <script>
-
-           window.onload = function() {
-            var elements = document.getElementsByTagName('*'),
-            i;
-            for (i in elements) {
-                if (elements[i].hasAttribute && elements[i].hasAttribute('data-include')) {
-                    fragment(elements[i], elements[i].getAttribute('data-include'));
-                }
-            }
-            function fragment(el, url) {
-                var localTest = /^(?:file):/,
-                xmlhttp = new XMLHttpRequest(),
-                status = 0;
-
-                xmlhttp.onreadystatechange = function() {
-                    /* if we are on a local protocol, and we have response text, we'll assume
-                    *                  things were sucessful */
-                    if (xmlhttp.readyState == 4) {
-                        status = xmlhttp.status;
-                    }
-                    if (localTest.test(location.href) && xmlhttp.responseText) {
-                        status = 200;
-                    }
-                    if (xmlhttp.readyState == 4 && status == 200) {
-                        el.outerHTML = xmlhttp.responseText;
-                        var tf = new TableFilter(document.querySelector('#counters'), {
-                            base_path: 'js/tablefilter/'
-                        });
-                        tf.init();
-                    }
-                }
-
-                try { 
-                    xmlhttp.open("GET", url, true);
-                    xmlhttp.send();
-                } catch(err) {
-                    /* todo catch error */
-                }
-            }
-        }
+		<div class="row">
+			<div class="col-lg-12 text-center" style="font-size: 1.1em;">
+				<p>
+					This is my take at the counters in Pokemon GO. This analisys is
+					based solely on types, so it's basically useless. An analysis based
+					on DPS and another one based on simulations are the making. For the
+					full analysis visit <a
+						href="https://www.reddit.com/r/TheSilphRoad/comments/4ymgmc/work_in_progress_my_take_on_pokemon_movesets_and/"
+						style="color: red">this thread</a>.
+				<p>The Total Bonus is what matters. Every one of these things
+					will give a x1.25 bonus which stacks multiplicatively: STAB,
+					Supereffectiveness against the a defender's type, Resistance to a
+					defender's attack. With some averaging magic going around to
+					account for the two attacks. (Again, check the reddit thread)
+				<p>
+					The numbers go up to 3.05 (A dual-type pokemon with
+					double-supereffectiveness and double-resistance against the
+					defender's moves).<br />I consider 1.25^3 = 1.95 to be a hard
+					counter
+				<p>The Hard Counters list accounts only for hard counters (Total
+					Bonus >= 1.95).
+				<p>
+					If you want the full list of counters (Total Bonus > 1.563), check
+					the navbar.<br /> <strong>WARNING:</strong> it loads super slow!
+					Don't even attempt to use it on mobile. It will make your
+					smartphone explode. I decline all responsibility.
+				<h2>How to use it</h2>
+				<p>
+					The table is sorted by Total Bonus. Input the desired filters
+					(don'have to be entire word) in the top row, then press Enter and
+					lay back a second or two.<br />The data won't be filtered until
+					press Enter.<br/>
+					<strong>Example:</strong> input 'Vap' in the 'Defenders' column filter and press Enter. Best counters are sorted top to bottom.
+				<h3>Have fun!</h3>
+				<hr />
+			</div>
+			<!-- /.row -->
+		</div>
 
 
-        </script>
-    </body>
 
-    </html>
+		<div class="row">
+			<div class="col-lg-12">
+				<div data-include="results_table1.563.html" class="text-center">
+					Loading 12,389 rows <img class="loading-ball"
+						src="static/pokeball30.png" /> This will take a while...
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- /.container -->
+
+
+	<script>
+		window.onload = function() {
+			var elements = document.getElementsByTagName('*'), i;
+			for (i in elements) {
+				if (elements[i].hasAttribute
+						&& elements[i].hasAttribute('data-include')) {
+					fragment(elements[i], elements[i]
+							.getAttribute('data-include'));
+				}
+			}
+			function fragment(el, url) {
+				var localTest = /^(?:file):/, xmlhttp = new XMLHttpRequest(), status = 0;
+
+				xmlhttp.onreadystatechange = function() {
+					/* if we are on a local protocol, and we have response text, we'll assume
+					 *                  things were sucessful */
+					if (xmlhttp.readyState == 4) {
+						status = xmlhttp.status;
+					}
+					if (localTest.test(location.href) && xmlhttp.responseText) {
+						status = 200;
+					}
+					if (xmlhttp.readyState == 4 && status == 200) {
+						el.outerHTML = xmlhttp.responseText;
+						var tf = new TableFilter(document
+								.querySelector('#counters'), {
+							base_path : 'js/tablefilter/'
+						});
+						tf.init();
+					}
+				}
+
+				try {
+					xmlhttp.open("GET", url, true);
+					xmlhttp.send();
+				} catch (err) {
+					/* todo catch error */
+				}
+			}
+		}
+	</script>
+</body>
+
+</html>
