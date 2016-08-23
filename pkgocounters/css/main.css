@@ -30,5 +30,5 @@ animation: spin1 2s infinite linear;
 
 
 body {
-    background: rgba(0, 0, 0, 0) url("static/black-linen-light.png") repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../static/black-linen-light.png") repeat scroll 0 0;
 }
