@@ -6,7 +6,7 @@
 -ms-animation: spin1 2s infinite linear;
 animation: spin1 2s infinite linear;
 }
- 
+
 @-webkit-keyframes spin1 {
 0% { -webkit-transform: rotate(0deg);}
 100% { -webkit-transform: rotate(360deg);}
@@ -26,4 +26,9 @@ animation: spin1 2s infinite linear;
 @-keyframes spin1 {
 0% { transform: rotate(0deg);}
 100% { transform: rotate(360deg);}
+}
+
+
+body {
+    background: rgba(0, 0, 0, 0) url("../static/black-linen-light.png") repeat scroll 0 0;
 }
