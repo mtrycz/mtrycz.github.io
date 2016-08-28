@@ -44,5 +44,32 @@ Project now maintained by <a href='https://github.com/lovasoa'>lovasoa</a>
 </footer>
 
 <script type="text/javascript" src="gui.js"></script>
+<script type="text/javascript">
+var execBtn = document.getElementById("load");
+
+var loadDb = function() {
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', '/pkgocounters/dbbrowser/mtrycz.db', true);
+	xhr.responseType = 'arraybuffer';
+	
+	xhr.onload = function(e) {
+	  var uInt8Array = new Uint8Array(this.response);
+	  // var db = new SQL.Database(uInt8Array);
+	  worker.postMessage({
+	    id:1,
+	    action:'open',
+	    buffer:uInt8Array, /*Optional. An ArrayBuffer representing an SQLite Database file*/
+	})
+	  // var contents = db.exec("SELECT * FROM my_table");
+	  // contents is now [{columns:['col1','col2',...], values:[[first row], [second row], ...]}]
+	};
+	xhr.send();
+}
+
+execBtn.addEventListener("click", loadDb, true);
+
+
+</script>
+
 </body>
 </html>
