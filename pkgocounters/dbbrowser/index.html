@@ -56,7 +56,8 @@ var loadDb = function() {
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', '/pkgocounters/dbbrowser/mtrycz.db', true);
 	xhr.responseType = 'arraybuffer';
-	
+	 document.getElementById('output').innerHTML("Loading...");
+  
 	xhr.onload = function(e) {
 	  var uInt8Array = new Uint8Array(this.response);
 	  // var db = new SQL.Database(uInt8Array);
@@ -65,6 +66,8 @@ var loadDb = function() {
 	    action:'open',
 	    buffer:uInt8Array, /*Optional. An ArrayBuffer representing an SQLite Database file*/
 	})
+     document.getElementById('output').innerHTML("Done! You can now execute your queries");
+
 	  // var contents = db.exec("SELECT * FROM my_table");
 	  // contents is now [{columns:['col1','col2',...], values:[[first row], [second row], ...]}]
 	};
