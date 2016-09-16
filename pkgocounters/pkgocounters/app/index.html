@@ -52,7 +52,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-5">
+			<div class="col-md-5">
 				<table id="table_defenders"
 					class="display table table-stripped table-hover table-bordered">
 					<thead>
@@ -67,7 +67,7 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="col-xs-7">
+			<div class="col-md-7">
 				<table id="table_attackers"
 					class="display table table-stripped table-hover table-bordered">
 					<thead>
@@ -184,8 +184,8 @@
 		}).column(6).search("Yes");
 		
 		defenders.on('select', function (e, dt, type, indexes ) {
-			console.log(indexes);
 			var row = defenders.row(indexes[0]).data();
+		//	defenders.search();
 			var name = "json/"+ row.defendername +"_"+ row.defenderfastmove +"_"+ row.defenderspecialmove +".json";
 			console.log(name);
 			attackers.ajax.url(name).load();
