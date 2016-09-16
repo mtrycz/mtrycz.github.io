@@ -50,16 +50,44 @@
       </div>
     </div>
 
-    <div class="container">
-    <div ng-view="">
-    				<div ng-controller="WithAjaxCtrl as showCase">
-			    <table datatable="" dt-options="showCase.dtOptions" dt-columns="showCase.dtColumns" class="row-border hover"></table>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<table id="table_defenders"
+					class="display table table-stripped table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>Species</th>
+							<th>Fast</th>
+							<th>Special</th>
+							<th>Won</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
 			</div>
-    	
-    </div>
-    </div>
+			<div class="col-md-7">
+				<table id="table_attackers"
+					class="display table table-stripped table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>Species</th>
+							<th>Fast</th>
+							<th>Special</th>
+							<th>HP Left</th>
+							<th>%HP Left</th>
+							<th>Time (ms)</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
 
-    <div class="footer">
+	<div class="footer">
       <div class="container">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
@@ -67,16 +95,20 @@
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-83973574-1', 'auto');
+	  ga('send', 'pageview');
+	
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+	</script>
 
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+  
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -104,10 +136,60 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <script src="https://cdn.datatables.net/select/1.2.0/js/dataTables.select.min.js"></script>
+
+
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <!-- endbuild -->
+        
+        <script>	$(document).ready(function(){ 
+		var defenders = $('#table_defenders').DataTable({
+			ajax: {
+		        url: 'json/defenders.json',
+		        dataSrc: ''
+       		 },
+			columns: [
+				{data: "defendername"},
+				{data: "defenderfastmove", "searchable": false},
+				{data: "defenderspecialmove", "searchable": false},
+				{data: "won", "searchable": false},
+				{data: "defenderavailable", visible: false},
+				{data: "defenderevolutions", visible: false}
+			],
+			paging: false,
+			"ordering": false,
+			select: 'single'
+		}).column(4).search("Yes");
+		
+		var attackers = $('#table_attackers').DataTable({
+			ajax: {
+				url: 'json/empty.json',
+		        dataSrc: ''
+			},
+			columns: [
+				{data: "attackername"},
+				{data: "attackerfastmove", "searchable": false},
+				{data: "attackerspecialmove", "searchable": false},
+				{data: "hpleft", "searchable": false},
+				{data: "hpleftpercent",  "searchable": false},
+				{data: "timetozerohp",  "searchable": false},
+				{data: "attackeravailable", visible: false},
+				{data: "attackerevolutions", visible: false}
+			],
+			paging: false,
+			"ordering": false,
+		}).column(6).search("Yes");
+		
+		defenders.on('select', function (e, dt, type, indexes ) {
+			console.log(indexes);
+			var row = defenders.row(indexes[0]).data();
+			var name = "json/"+ row.defendername +"_"+ row.defenderfastmove +"_"+ row.defenderspecialmove +".json";
+			console.log(name);
+			attackers.ajax.url(name).load();
+		});
+	});</script>
 </body>
 </html>
