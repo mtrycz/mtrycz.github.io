@@ -32,7 +32,7 @@ $(document).ready(function(){
               {data: "attackerspecialmove", "searchable": false, orderable: false},
               {data: "hpleft", "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
               {data: "hpleftpercent",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
-              {data: "timetozerohp",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
+              {data: "timetozerohp",  "searchable": false, orderable: true, "orderSequence": [ "asc" ]},
               {data: "attackeravailable", visible: false, orderable: false},
               {data: "attackerevolutions", visible: false, orderable: false}
               ],
