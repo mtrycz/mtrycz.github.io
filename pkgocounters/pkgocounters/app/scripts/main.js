@@ -21,24 +21,25 @@ $(document).ready(function(){
   defenders.column(4).search("Yes");
   //defenders.column(1).search("Zen");
 
-  var attackers = $('#table_attackers').DataTable({
+  attackers = $('#table_attackers').DataTable({
     ajax: {
       url: 'json/empty.json',
       dataSrc: ''
     },
     columns: [
-              {data: "attackername"},
-              {data: "attackerfastmove", "searchable": false},
-              {data: "attackerspecialmove", "searchable": false},
-              {data: "hpleft", "searchable": false},
-              {data: "hpleftpercent",  "searchable": false},
-              {data: "timetozerohp",  "searchable": false},
-              {data: "attackeravailable", visible: false},
-              {data: "attackerevolutions", visible: false}
+              {data: "attackername", orderable: false},
+              {data: "attackerfastmove", "searchable": false, orderable: false},
+              {data: "attackerspecialmove", "searchable": false, orderable: false},
+              {data: "hpleft", "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
+              {data: "hpleftpercent",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
+              {data: "timetozerohp",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
+              {data: "attackeravailable", visible: false, orderable: false},
+              {data: "attackerevolutions", visible: false, orderable: false}
               ],
               paging: false,
-              "ordering": false,
-              processing: true
+              "ordering": true,
+              processing: true,
+              order: [[4, 'desc']]
 
   }).column(6).search("Yes");
 
@@ -50,6 +51,7 @@ $(document).ready(function(){
     console.log(defenders.search());
     var name = "json/"+ row.defendername +"_"+ row.defenderfastmove +"_"+ row.defenderspecialmove +".json";
     console.log(name);
-    attackers.ajax.url(name).load();
+    attackers.ajax.url(name).load(function() {attackers.columns.adjust().draw()});
+    ;
   });
 });
