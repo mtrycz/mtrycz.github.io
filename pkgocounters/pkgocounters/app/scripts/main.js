@@ -1,5 +1,5 @@
 $(document).ready(function(){ 
-  defenders = $('#table_defenders').DataTable({
+  var defenders = $('#table_defenders').DataTable({
     ajax: {
       url: 'json/defenders.json',
       dataSrc: ''
@@ -21,7 +21,7 @@ $(document).ready(function(){
   defenders.column(4).search("Yes");
   //defenders.column(1).search("Zen");
 
-  attackers = $('#table_attackers').DataTable({
+  var attackers = $('#table_attackers').DataTable({
     ajax: {
       url: 'json/empty.json',
       dataSrc: ''
