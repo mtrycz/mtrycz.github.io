@@ -57,12 +57,20 @@
 					class="display table table-condensed table-stripped table-hover table-bordered">
 					<thead>
 						<tr>
-							<th>Species</th>
+							<th class="select-filter">Species</th>
 							<th>Fast</th>
 							<th>Special</th>
 							<th>Won</th>
 						</tr>
 					</thead>
+<!--           <tfoot> -->
+<!--             <tr> -->
+<!--               <td></td> -->
+<!--               <td></td> -->
+<!--               <td></td> -->
+<!--               <td></td> -->
+<!--             </tr> -->
+<!--           </tfoot> -->
 					<tbody>
 					</tbody>
 				</table>
@@ -153,56 +161,6 @@
 	<script src="scripts/controllers/about.js"></script>
 	<!-- endbuild -->
 
-	<script>	$(document).ready(function(){ 
-		defenders = $('#table_defenders').DataTable({
-			ajax: {
-		        url: 'json/defenders.json',
-		        dataSrc: ''
-       		 },
-			columns: [
-				{data: "defendername"},
-				{data: "defenderfastmove"},
-				{data: "defenderspecialmove"},
-				{data: "won", "searchable": false},
-				{data: "defenderavailable", visible: false},
-				{data: "defenderevolutions", visible: false}
-			],
-			paging: false,
-			"ordering": false,
-			select: 'single',
-			processing: true
-		}).column(4).search("Yes");
-		
-		attackers = $('#table_attackers').DataTable({
-			ajax: {
-				url: 'json/empty.json',
-		        dataSrc: ''
-			},
-			columns: [
-				{data: "attackername"},
-				{data: "attackerfastmove", "searchable": false},
-				{data: "attackerspecialmove", "searchable": false},
-				{data: "hpleft", "searchable": false},
-				{data: "hpleftpercent",  "searchable": false},
-				{data: "timetozerohp",  "searchable": false},
-				{data: "attackeravailable", visible: false},
-				{data: "attackerevolutions", visible: false}
-			],
-			paging: false,
-			"ordering": false,
-			processing: true
-			
-		}).column(6).search("Yes");
-		
-		defenders.on('select', function (e, dt, type, indexes ) {
-			var row = defenders.row(indexes[0]).data();
-			//defenders.search(row.defendername).draw();
-			attackers.clear().draw();
-			console.log(defenders.search());
-			var name = "json/"+ row.defendername +"_"+ row.defenderfastmove +"_"+ row.defenderspecialmove +".json";
-			console.log(name);
-			attackers.ajax.url(name).load();
-		});
-	});</script>
+	<script src="scripts/main.js"></script>
 </body>
 </html>
