@@ -1,0 +1,8 @@
+1. Estrarre tutte le mosse
+2. Estrarre tutte le mosse speciali
+3. Estrarre tutti i pocket monster
+4. Estrarre tutti le combinazioni di mosse dei pocket monster
+
+1. Calcola ogni combinazione contando i tipi di attacco e di difesa (e stab), dicendo il moltiplicatore 
+2. Calcola ogni combinazione contando i dps di ogni mossa, calcola la differenza di dps
+3. Avvia una simulazione per ogni combinazione, salvando l'outcome (ordina per la maggior % di hp rimasti, o il maggior numero di hp rimasti)
