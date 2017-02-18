@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var isMobile = window.matchMedia("handheld").matches;
 	console.log(isMobile);
 
-	defenders = $('#table_defenders').DataTable({
+	var defenders = $('#table_defenders').DataTable({
 		ajax: {
 			url: 'json/defenders.json',
 			dataSrc: ''
