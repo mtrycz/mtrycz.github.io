@@ -1,7 +1,6 @@
 $(document).ready(function(){ 
 
 	var isMobile = window.matchMedia("handheld").matches;
-	console.log(isMobile);
 
 	var defenders = $('#table_defenders').DataTable({
 		ajax: {
@@ -75,14 +74,11 @@ $(document).ready(function(){
 
 	defenders.on('select', function (e, dt, type, indexes ) {
 		$('#table_attackers_filter').css("visibility", "visible")
-		console.log(e);
 		var row = defenders.row(indexes[0]).data();
 		if (isMobile)
 			defenders.columns([0, 1, 2]).data().search(row.defendername+" "+ row.defenderfastmove +" "+ row.defenderspecialmove).draw();
 		attackers.clear().draw();
-		console.log(defenders.search());
 		var name = "json/"+ row.defendername +"_"+ row.defenderfastmove +"_"+ row.defenderspecialmove +".json";
-		console.log(name);
 		attackers.ajax.url(name).load(function() {attackers.columns.adjust().draw()});
 		;
 	});
@@ -119,13 +115,13 @@ $(document).ready(function(){
 //	defenders.column(4).search("Yes");
 	//defenders.column(1).search("Zen");
 
-	var defenders2 = $('#table_defenders2').DataTable({
+	defenders2 = $('#table_defenders2').DataTable({
 		ajax: {
 			url: 'json/empty.json',
 			dataSrc: ''
 		},
 		columns: [
-		          {data: "rank", orderable: false},
+		          {data: "rank", orderable: true},
 		          {data: "defendername", orderable: true},
 		          {data: "defenderfastmove", "searchable": false, orderable: false},
 		          {data: "defenderspecialmove", "searchable": false, orderable: false},
@@ -159,14 +155,11 @@ $(document).ready(function(){
 
 	attackers2.on('select', function (e, dt, type, indexes ) {
 		$('#table_attackers2_filter').css("visibility", "visible")
-		console.log(e);
 		var row = attackers2.row(indexes[0]).data();
 		if (isMobile)
 			attackers2.columns([0, 1, 2]).data().search(row.attackername+" "+ row.attackerfastmove +" "+ row.attackerspecialmove).draw();
 		defenders2.clear().draw();
-		console.log(attackers2.search());
 		var name = "json/attackers/"+ row.attackername +"_"+ row.attackerfastmove +"_"+ row.attackerspecialmove +".json";
-		console.log(name);
 		defenders2.ajax.url(name).load(function() {defenders2.columns.adjust().draw()});
 		;
 	});
@@ -185,39 +178,30 @@ $(document).ready(function(){
 
 	// ---------Available
 	$("#available :input").change(function(event) {
-		console.log(event)
-		console.log(defenders)
-		console.log(defenders.column("defenderavailable"));
 		if (event.target.id === "availableyes") {
-			console.log( "availableyes")
 			defenders.column(4).search("false").draw();
 			attackers.column(7).search("false").draw();
-			defenders2.column(4).search("false").draw();
-			attackers2.column(7).search("false").draw();
+			attackers2.column(4).search("false").draw();
+			defenders2.column(7).search("false").draw();
 		} else {
-			console.log( "availableall")
-
 			defenders.column(4).search("").draw();
 			attackers.column(7).search("").draw();
-			defenders2.column(4).search("").draw();
-			attackers2.column(7).search("").draw();
+			attackers2.column(4).search("").draw();
+			defenders2.column(7).search("").draw();
 		}
 	});
 
 	$("#evolved :input").change(function(event) {
 		if (event.target.id === "evolvedfully") {
-			console.log( "evolvedfully")
 			defenders.column(5).search("0").draw();
 			attackers.column(8).search("0").draw();
-			defenders2.column(5).search("0").draw();
-			attackers2.column(8).search("0").draw();
+			attackers2.column(5).search("0").draw();
+			defenders2.column(8).search("0").draw();
 		} else {
-			console.log( "evolvedall")
-
 			defenders.column(5).search("").draw();
 			attackers.column(8).search("").draw();
-			defenders2.column(5).search("").draw();
-			attackers2.column(8).search("").draw();
+			attackers2.column(5).search("").draw();
+			defenders2.column(8).search("").draw();
 		}
 	});
 
