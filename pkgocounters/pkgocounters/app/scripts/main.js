@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var isMobile = window.matchMedia("handheld").matches;
 	console.log(isMobile);
 
-	var defenders = $('#table_defenders').DataTable({
+	defenders = $('#table_defenders').DataTable({
 		ajax: {
 			url: 'json/defenders.json',
 			dataSrc: ''
@@ -16,6 +16,14 @@ $(document).ready(function(){
 		          {data: "defenderavailable", visible: false},
 		          {data: "defenderevolutions", visible: false}
 		          ],
+		searchCols: [
+		             null,
+		             null,
+		             null,
+		             null,
+		             {"search": "false"},
+		             {"search": "0"}
+		             ],
 		          paging: false,
 		          ordering: true,
 		          order: [[3, 'desc']],
@@ -41,6 +49,17 @@ $(document).ready(function(){
 		          {data: "attackeravailable", visible: false, orderable: false},
 		          {data: "attackerevolutions", visible: false, orderable: false}
 		          ],
+		  		searchCols: [
+				             null,
+				             null,
+				             null,
+				             null,
+				             null,
+				             null,
+				             null,
+				             {"search": "false"},
+				             {"search": "0"},
+				             ],
 		          paging: false,
 		          "ordering": true,
 		          processing: true,
@@ -83,6 +102,14 @@ $(document).ready(function(){
 		          {data: "attackeravailable", visible: false},
 		          {data: "attackerevolutions", visible: false}
 		          ],
+		  		searchCols: [
+				             null,
+				             null,
+				             null,
+				             null,
+				             {"search": "false"},
+				             {"search": "0"}
+				             ],
 		          paging: false,
 		          ordering: true,
 		          order: [[3, 'desc']],
@@ -108,6 +135,17 @@ $(document).ready(function(){
 		          {data: "defenderavailable", visible: false, orderable: false},
 		          {data: "defenderevolutions", visible: false, orderable: false}
 		          ],
+		searchCols: [
+		             null,
+		             null,
+		             null,
+		             null,
+		             null,
+		             null,
+		             null,
+		             {"search": "false"},
+		             {"search": "0"},
+		             ],
 		          paging: false,
 		          "ordering": true,
 		          processing: true,
@@ -117,8 +155,8 @@ $(document).ready(function(){
 		          }
 
 	});
-	
-	
+
+
 	attackers2.on('select', function (e, dt, type, indexes ) {
 		$('#table_attackers2_filter').css("visibility", "visible")
 		console.log(e);
@@ -132,10 +170,10 @@ $(document).ready(function(){
 		defenders2.ajax.url(name).load(function() {defenders2.columns.adjust().draw()});
 		;
 	});
-	
-	
-	
-	// -----------------------------------
+
+
+
+	// ---------Attackers / Defenders
 	$("#tabletype :input").change(function() {
 		$("#defendersdiv").toggle();
 		$("#attackersdiv").toggle();
@@ -144,4 +182,44 @@ $(document).ready(function(){
 		attackers2.columns.adjust().draw()
 		defenders2.columns.adjust().draw()
 	});
+
+	// ---------Available
+	$("#available :input").change(function(event) {
+		console.log(event)
+		console.log(defenders)
+		console.log(defenders.column("defenderavailable"));
+		if (event.target.id === "availableyes") {
+			console.log( "availableyes")
+			defenders.column(4).search("false").draw();
+			attackers.column(7).search("false").draw();
+			defenders2.column(4).search("false").draw();
+			attackers2.column(7).search("false").draw();
+		} else {
+			console.log( "availableall")
+
+			defenders.column(4).search("").draw();
+			attackers.column(7).search("").draw();
+			defenders2.column(4).search("").draw();
+			attackers2.column(7).search("").draw();
+		}
+	});
+
+	$("#evolved :input").change(function(event) {
+		if (event.target.id === "evolvedfully") {
+			console.log( "evolvedfully")
+			defenders.column(5).search("0").draw();
+			attackers.column(8).search("0").draw();
+			defenders2.column(5).search("0").draw();
+			attackers2.column(8).search("0").draw();
+		} else {
+			console.log( "evolvedall")
+
+			defenders.column(5).search("").draw();
+			attackers.column(8).search("").draw();
+			defenders2.column(5).search("").draw();
+			attackers2.column(8).search("").draw();
+		}
+	});
+
+//	});
 });
