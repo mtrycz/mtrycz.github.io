@@ -1,0 +1,379 @@
+﻿"defendermoveset";"defendername";"defenderfastmove";"defenderspecialmove";"rating"
+167;Nidoqueen;Bite;Earthquake;1
+49;Blastoise;Water Gun;Ice Beam;2
+52;Blastoise;Bite;Ice Beam;2
+310;Golduck;Water Gun;Ice Beam;2
+337;Arcanine;Bite;Bulldoze;2
+355;Poliwrath;Mud Shot;Ice Punch;2
+457;Slowbro;Water Gun;Ice Beam;2
+673;Seadra;Water Gun;Blizzard;2
+638;Weezing;Tackle;Shadow Ball;3
+639;Weezing;Tackle;Dark Pulse;3
+150;Sandslash;Mud Shot;Rock Tomb;4
+185;Nidoking;Fury Cutter;Earthquake;4
+195;Clefable;Pound;Psychic;4
+197;Clefable;Zen Headbutt;Dazzling Gleam;4
+198;Clefable;Zen Headbutt;Psychic;4
+199;Clefable;Zen Headbutt;Moonblast;4
+286;Dugtrio;Sucker Punch;Stone Edge;4
+289;Dugtrio;Mud Shot;Stone Edge;4
+413;Tentacruel;Acid;Hydro Pump;4
+416;Tentacruel;Poison Jab;Hydro Pump;4
+572;Kingler;Mud Shot;Vice Grip;4
+573;Kingler;Mud Shot;X-Scissor;4
+219;Wigglytuff;Pound;Hyper Beam;5
+444;Rapidash;Low Kick;Drill Run;5
+284;Dugtrio;Sucker Punch;Earthquake;6
+285;Dugtrio;Sucker Punch;Mud Bomb;6
+313;Golduck;Confusion;Ice Beam;6
+322;Primeape;Low Kick;Night Slash;6
+325;Primeape;Karate Chop;Night Slash;6
+460;Slowbro;Confusion;Ice Beam;6
+475;Farfetch'd;Cut;Leaf Blade;6
+498;Dewgong;Frost Breath;Aqua Jet;6
+501;Dewgong;Ice Shard;Aqua Jet;6
+522;Cloyster;Frost Breath;Hydro Pump;6
+525;Cloyster;Ice Shard;Hydro Pump;6
+676;Seadra;Dragon Breath;Blizzard;6
+677;Seadra;Dragon Breath;Dragon Pulse;6
+688;Seaking;Poison Jab;Icy Wind;6
+699;Starmie;Quick Attack;Psybeam;6
+740;Tauros;Tackle;Iron Head;6
+743;Tauros;Zen Headbutt;Iron Head;6
+383;Machamp;Bullet Punch;Stone Edge;7
+698;Starmie;Quick Attack;Power Gem;7
+308;Golduck;Water Gun;Psychic;8
+312;Golduck;Confusion;Hydro Pump;8
+352;Poliwrath;Bubble;Ice Punch;8
+586;Electrode;Tackle;Hyper Beam;8
+616;Hitmonchan;Bullet Punch;Thunder Punch;8
+733;Pinsir;Rock Smash;Vice Grip;8
+752;Lapras;Frost Breath;Dragon Pulse;8
+755;Lapras;Ice Shard;Dragon Pulse;8
+98;Raticate;Bite;Dig;9
+99;Raticate;Bite;Hyper Fang;9
+100;Raticate;Bite;Hyper Beam;9
+296;Persian;Scratch;Night Slash;9
+297;Persian;Scratch;Power Gem;9
+614;Hitmonchan;Bullet Punch;Fire Punch;9
+775;Porygon;Quick Attack;Signal Beam;9
+778;Porygon;Tackle;Signal Beam;9
+53;Blastoise;Bite;Hydro Pump;10
+311;Golduck;Confusion;Psychic;10
+459;Slowbro;Confusion;Psychic;10
+720;Jynx;Pound;Psyshock;10
+134;Raichu;Thunder Shock;Brick Break;11
+137;Raichu;Spark;Brick Break;11
+415;Tentacruel;Acid;Blizzard;11
+418;Tentacruel;Poison Jab;Blizzard;11
+724;Electabuzz;Low Kick;Thunder Punch;11
+725;Electabuzz;Low Kick;Thunderbolt;11
+726;Electabuzz;Low Kick;Thunder;11
+164;Nidoqueen;Poison Jab;Earthquake;12
+182;Nidoking;Poison Jab;Earthquake;12
+233;Golbat;Bite;Poison Fang;12
+456;Slowbro;Water Gun;Psychic;12
+458;Slowbro;Confusion;Water Pulse;12
+615;Hitmonchan;Bullet Punch;Ice Punch;12
+674;Seadra;Water Gun;Dragon Pulse;12
+678;Seadra;Dragon Breath;Hydro Pump;12
+701;Starmie;Water Gun;Power Gem;12
+702;Starmie;Water Gun;Psybeam;12
+147;Sandslash;Metal Claw;Rock Tomb;13
+51;Blastoise;Bite;Flash Cannon;14
+123;Arbok;Bite;Sludge Wave;14
+124;Arbok;Bite;Gunk Shot;14
+125;Arbok;Acid;Dark Pulse;14
+168;Nidoqueen;Bite;Sludge Wave;14
+386;Machamp;Karate Chop;Stone Edge;14
+509;Muk;Acid;Dark Pulse;14
+512;Muk;Poison Jab;Dark Pulse;14
+610;Hitmonlee;Low Kick;Stone Edge;14
+613;Hitmonlee;Rock Smash;Stone Edge;14
+635;Weezing;Acid;Shadow Ball;14
+636;Weezing;Acid;Dark Pulse;14
+661;Kangaskhan;Mud Slap;Brick Break;14
+665;Kangaskhan;Low Kick;Earthquake;14
+807;Aerodactyl;Bite;Ancient Power;14
+583;Electrode;Spark;Hyper Beam;15
+584;Electrode;Tackle;Discharge;15
+585;Electrode;Tackle;Thunderbolt;15
+169;Nidoqueen;Bite;Stone Edge;16
+591;Exeggutor;Confusion;Psychic;16
+594;Exeggutor;Zen Headbutt;Psychic;16
+662;Kangaskhan;Mud Slap;Earthquake;16
+749;Gyarados;Bite;Hydro Pump;16
+146;Sandslash;Metal Claw;Earthquake;17
+148;Sandslash;Metal Claw;Bulldoze;17
+497;Dewgong;Frost Breath;Icy Wind;17
+499;Dewgong;Frost Breath;Blizzard;17
+500;Dewgong;Ice Shard;Icy Wind;17
+502;Dewgong;Ice Shard;Blizzard;17
+521;Cloyster;Frost Breath;Icy Wind;17
+523;Cloyster;Frost Breath;Blizzard;17
+524;Cloyster;Ice Shard;Icy Wind;17
+526;Cloyster;Ice Shard;Blizzard;17
+541;Gengar;Sucker Punch;Sludge Wave;17
+544;Gengar;Shadow Claw;Sludge Wave;17
+619;Hitmonchan;Rock Smash;Ice Punch;17
+620;Hitmonchan;Rock Smash;Thunder Punch;17
+690;Seaking;Poison Jab;Megahorn;17
+697;Starmie;Quick Attack;Hydro Pump;17
+753;Lapras;Frost Breath;Ice Beam;17
+754;Lapras;Frost Breath;Blizzard;17
+756;Lapras;Ice Shard;Ice Beam;17
+757;Lapras;Ice Shard;Blizzard;17
+809;Aerodactyl;Bite;Hyper Beam;17
+115;Fearow;Steel Wing;Twister;18
+569;Kingler;Metal Claw;Vice Grip;18
+570;Kingler;Metal Claw;X-Scissor;18
+608;Hitmonlee;Low Kick;Stomp;18
+611;Hitmonlee;Rock Smash;Stomp;18
+685;Seaking;Peck;Icy Wind;18
+687;Seaking;Peck;Megahorn;18
+221;Wigglytuff;Feint Attack;Dazzling Gleam;19
+223;Wigglytuff;Feint Attack;Play Rough;19
+574;Kingler;Mud Shot;Water Pulse;19
+717;Jynx;Frost Breath;Psyshock;19
+478;Farfetch'd;Fury Cutter;Leaf Blade;20
+637;Weezing;Tackle;Sludge Bomb;20
+746;Gyarados;Dragon Breath;Hydro Pump;20
+747;Gyarados;Dragon Breath;Twister;20
+748;Gyarados;Dragon Breath;Dragon Pulse;20
+750;Gyarados;Bite;Twister;20
+751;Gyarados;Bite;Dragon Pulse;20
+187;Nidoking;Fury Cutter;Megahorn;21
+618;Hitmonchan;Rock Smash;Fire Punch;21
+834;Dragonite;Steel Wing;Dragon Pulse;21
+836;Dragonite;Steel Wing;Dragon Claw;21
+62;Butterfree;Confusion;Psychic;22
+273;Venomoth;Bug Bite;Psychic;22
+277;Venomoth;Confusion;Bug Buzz;22
+194;Clefable;Pound;Dazzling Gleam;23
+196;Clefable;Pound;Moonblast;23
+275;Venomoth;Confusion;Poison Fang;23
+334;Arcanine;Fire Fang;Bulldoze;23
+384;Machamp;Bullet Punch;Submission;23
+385;Machamp;Bullet Punch;Cross Chop;23
+447;Rapidash;Ember;Drill Run;23
+617;Hitmonchan;Bullet Punch;Brick Break;23
+832;Dragonite;Dragon Breath;Hyper Beam;23
+835;Dragonite;Steel Wing;Hyper Beam;23
+48;Blastoise;Water Gun;Flash Cannon;24
+112;Fearow;Peck;Twister;24
+184;Nidoking;Poison Jab;Megahorn;24
+186;Nidoking;Fury Cutter;Sludge Wave;24
+218;Wigglytuff;Pound;Dazzling Gleam;24
+220;Wigglytuff;Pound;Play Rough;24
+299;Persian;Feint Attack;Night Slash;24
+300;Persian;Feint Attack;Power Gem;24
+485;Dodrio;Feint Attack;Drill Peck;24
+486;Dodrio;Feint Attack;Aerial Ace;24
+487;Dodrio;Feint Attack;Air Cutter;24
+571;Kingler;Metal Claw;Water Pulse;24
+50;Blastoise;Water Gun;Hydro Pump;25
+149;Sandslash;Mud Shot;Earthquake;25
+151;Sandslash;Mud Shot;Bulldoze;25
+287;Dugtrio;Mud Shot;Earthquake;25
+288;Dugtrio;Mud Shot;Mud Bomb;25
+309;Golduck;Water Gun;Hydro Pump;25
+353;Poliwrath;Mud Shot;Hydro Pump;25
+602;Marowak;Mud Slap;Bone Club;25
+603;Marowak;Mud Slap;Dig;25
+604;Marowak;Mud Slap;Earthquake;25
+675;Seadra;Water Gun;Hydro Pump;25
+765;Vaporeon;Water Gun;Water Pulse;25
+766;Vaporeon;Water Gun;Hydro Pump;25
+767;Vaporeon;Water Gun;Aqua Tail;25
+831;Dragonite;Dragon Breath;Dragon Pulse;25
+833;Dragonite;Dragon Breath;Dragon Claw;25
+135;Raichu;Thunder Shock;Thunder Punch;26
+136;Raichu;Thunder Shock;Thunder;26
+138;Raichu;Spark;Thunder Punch;26
+139;Raichu;Spark;Thunder;26
+232;Golbat;Wing Attack;Ominous Wind;26
+234;Golbat;Bite;Air Cutter;26
+476;Farfetch'd;Fury Cutter;Aerial Ace;26
+477;Farfetch'd;Fury Cutter;Air Cutter;26
+581;Electrode;Spark;Discharge;26
+582;Electrode;Spark;Thunderbolt;26
+721;Electabuzz;Thunder Shock;Thunder Punch;26
+722;Electabuzz;Thunder Shock;Thunderbolt;26
+723;Electabuzz;Thunder Shock;Thunder;26
+768;Jolteon;Thunder Shock;Discharge;26
+769;Jolteon;Thunder Shock;Thunderbolt;26
+770;Jolteon;Thunder Shock;Thunder;26
+166;Nidoqueen;Poison Jab;Stone Edge;27
+253;Vileplume;Acid;Moonblast;27
+719;Jynx;Pound;Ice Punch;27
+790;Omastar;Water Gun;Hydro Pump;27
+89;Pidgeot;Steel Wing;Hurricane;28
+90;Pidgeot;Steel Wing;Aerial Ace;28
+91;Pidgeot;Steel Wing;Air Cutter;28
+113;Fearow;Steel Wing;Aerial Ace;28
+467;Magneton;Spark;Discharge;28
+470;Magneton;Thunder Shock;Discharge;28
+488;Dodrio;Steel Wing;Drill Peck;28
+489;Dodrio;Steel Wing;Aerial Ace;28
+490;Dodrio;Steel Wing;Air Cutter;28
+664;Kangaskhan;Low Kick;Brick Break;28
+455;Slowbro;Water Gun;Water Pulse;29
+700;Starmie;Water Gun;Hydro Pump;29
+799;Kabutops;Mud Shot;Water Pulse;29
+808;Aerodactyl;Bite;Iron Head;29
+72;Beedrill;Poison Jab;Aerial Ace;30
+443;Rapidash;Low Kick;Fire Blast;30
+445;Rapidash;Low Kick;Heat Wave;30
+730;Magmar;Karate Chop;Fire Blast;30
+731;Magmar;Karate Chop;Fire Punch;30
+732;Magmar;Karate Chop;Flamethrower;30
+804;Aerodactyl;Steel Wing;Ancient Power;31
+276;Venomoth;Confusion;Psychic;32
+718;Jynx;Pound;Draining Kiss;32
+31;Charizard;Ember;Dragon Claw;33
+350;Poliwrath;Bubble;Hydro Pump;33
+165;Nidoqueen;Poison Jab;Sludge Wave;34
+183;Nidoking;Poison Jab;Sludge Wave;34
+806;Aerodactyl;Steel Wing;Hyper Beam;34
+206;Ninetales;Feint Attack;Heat Wave;35
+207;Ninetales;Feint Attack;Flamethrower;35
+208;Ninetales;Feint Attack;Fire Blast;35
+335;Arcanine;Bite;Fire Blast;35
+336;Arcanine;Bite;Flamethrower;35
+405;Victreebel;Acid;Sludge Bomb;35
+468;Magneton;Spark;Magnet Bomb;35
+469;Magneton;Spark;Flash Cannon;35
+471;Magneton;Thunder Shock;Magnet Bomb;35
+472;Magneton;Thunder Shock;Flash Cannon;35
+69;Beedrill;Bug Bite;Aerial Ace;36
+605;Marowak;Rock Smash;Bone Club;36
+606;Marowak;Rock Smash;Dig;36
+607;Marowak;Rock Smash;Earthquake;36
+736;Pinsir;Fury Cutter;Vice Grip;36
+802;Kabutops;Fury Cutter;Water Pulse;36
+126;Arbok;Acid;Sludge Wave;37
+127;Arbok;Acid;Gunk Shot;37
+473;Farfetch'd;Cut;Aerial Ace;37
+474;Farfetch'd;Cut;Air Cutter;37
+510;Muk;Acid;Gunk Shot;37
+511;Muk;Acid;Sludge Wave;37
+513;Muk;Poison Jab;Gunk Shot;37
+514;Muk;Poison Jab;Sludge Wave;37
+634;Weezing;Acid;Sludge Bomb;37
+715;Jynx;Frost Breath;Draining Kiss;37
+735;Pinsir;Rock Smash;Submission;37
+798;Kabutops;Mud Shot;Ancient Power;37
+800;Kabutops;Mud Shot;Stone Edge;37
+71;Beedrill;Poison Jab;Sludge Bomb;38
+12;Venusaur;Razor Leaf;Sludge Bomb;39
+15;Venusaur;Vine Whip;Sludge Bomb;39
+251;Vileplume;Acid;Petal Blizzard;39
+252;Vileplume;Acid;Solar Beam;39
+402;Victreebel;Razor Leaf;Sludge Bomb;39
+404;Victreebel;Acid;Leaf Blade;39
+406;Victreebel;Acid;Solar Beam;39
+34;Charizard;Wing Attack;Dragon Claw;40
+354;Poliwrath;Mud Shot;Submission;40
+787;Omastar;Rock Throw;Hydro Pump;40
+789;Omastar;Water Gun;Ancient Power;40
+791;Omastar;Water Gun;Rock Slide;40
+68;Beedrill;Bug Bite;Sludge Bomb;41
+73;Beedrill;Poison Jab;X-Scissor;41
+272;Venomoth;Bug Bite;Poison Fang;41
+414;Tentacruel;Acid;Sludge Wave;41
+417;Tentacruel;Poison Jab;Sludge Wave;41
+709;Scyther;Fury Cutter;Night Slash;41
+716;Jynx;Frost Breath;Ice Punch;42
+59;Butterfree;Bug Bite;Psychic;43
+61;Butterfree;Confusion;Bug Buzz;43
+63;Butterfree;Confusion;Signal Beam;43
+230;Golbat;Wing Attack;Poison Fang;43
+231;Golbat;Wing Attack;Air Cutter;43
+351;Poliwrath;Bubble;Submission;44
+86;Pidgeot;Wing Attack;Hurricane;45
+87;Pidgeot;Wing Attack;Aerial Ace;45
+88;Pidgeot;Wing Attack;Air Cutter;45
+110;Fearow;Peck;Aerial Ace;45
+734;Pinsir;Rock Smash;X-Scissor;48
+738;Pinsir;Fury Cutter;Submission;48
+712;Scyther;Steel Wing;Night Slash;49
+33;Charizard;Wing Attack;Fire Blast;51
+35;Charizard;Wing Attack;Flamethrower;51
+70;Beedrill;Bug Bite;X-Scissor;54
+274;Venomoth;Bug Bite;Bug Buzz;54
+801;Kabutops;Fury Cutter;Ancient Power;54
+803;Kabutops;Fury Cutter;Stone Edge;54
+805;Aerodactyl;Steel Wing;Iron Head;56
+250;Vileplume;Razor Leaf;Moonblast;58
+590;Exeggutor;Confusion;Seed Bomb;58
+592;Exeggutor;Confusion;Solar Beam;58
+593;Exeggutor;Zen Headbutt;Seed Bomb;58
+595;Exeggutor;Zen Headbutt;Solar Beam;58
+737;Pinsir;Fury Cutter;X-Scissor;58
+30;Charizard;Ember;Fire Blast;59
+32;Charizard;Ember;Flamethrower;59
+209;Ninetales;Ember;Heat Wave;61
+210;Ninetales;Ember;Flamethrower;61
+211;Ninetales;Ember;Fire Blast;61
+320;Primeape;Low Kick;Cross Chop;61
+321;Primeape;Low Kick;Low Sweep;61
+323;Primeape;Karate Chop;Cross Chop;61
+324;Primeape;Karate Chop;Low Sweep;61
+332;Arcanine;Fire Fang;Fire Blast;61
+333;Arcanine;Fire Fang;Flamethrower;61
+387;Machamp;Karate Chop;Submission;61
+388;Machamp;Karate Chop;Cross Chop;61
+446;Rapidash;Ember;Fire Blast;61
+448;Rapidash;Ember;Heat Wave;61
+609;Hitmonlee;Low Kick;Low Sweep;61
+612;Hitmonlee;Rock Smash;Low Sweep;61
+621;Hitmonchan;Rock Smash;Brick Break;61
+650;Rhydon;Rock Smash;Earthquake;61
+727;Magmar;Ember;Fire Blast;61
+728;Magmar;Ember;Fire Punch;61
+729;Magmar;Ember;Flamethrower;61
+771;Flareon;Ember;Fire Blast;61
+772;Flareon;Ember;Flamethrower;61
+773;Flareon;Ember;Heat Wave;61
+713;Scyther;Steel Wing;X-Scissor;63
+714;Scyther;Steel Wing;Bug Buzz;63
+550;Onix;Tackle;Iron Head;64
+436;Golem;Mud Shot;Earthquake;66
+646;Rhydon;Mud Slap;Megahorn;66
+647;Rhydon;Mud Slap;Earthquake;66
+433;Golem;Rock Throw;Earthquake;69
+434;Golem;Mud Shot;Stone Edge;69
+435;Golem;Mud Shot;Ancient Power;69
+648;Rhydon;Mud Slap;Stone Edge;69
+651;Rhydon;Rock Smash;Stone Edge;70
+649;Rhydon;Rock Smash;Megahorn;72
+659;Tangela;Vine Whip;Sludge Bomb;72
+786;Omastar;Rock Throw;Ancient Power;73
+788;Omastar;Rock Throw;Rock Slide;73
+58;Butterfree;Bug Bite;Bug Buzz;75
+60;Butterfree;Bug Bite;Signal Beam;75
+710;Scyther;Fury Cutter;X-Scissor;75
+711;Scyther;Fury Cutter;Bug Buzz;75
+547;Onix;Rock Throw;Iron Head;78
+548;Onix;Tackle;Rock Slide;84
+549;Onix;Tackle;Stone Edge;84
+431;Golem;Rock Throw;Stone Edge;96
+432;Golem;Rock Throw;Ancient Power;96
+545;Onix;Rock Throw;Rock Slide;96
+546;Onix;Rock Throw;Stone Edge;96
+13;Venusaur;Razor Leaf;Petal Blizzard;100
+14;Venusaur;Razor Leaf;Solar Beam;100
+16;Venusaur;Vine Whip;Petal Blizzard;100
+17;Venusaur;Vine Whip;Solar Beam;100
+248;Vileplume;Razor Leaf;Petal Blizzard;100
+249;Vileplume;Razor Leaf;Solar Beam;100
+401;Victreebel;Razor Leaf;Leaf Blade;100
+403;Victreebel;Razor Leaf;Solar Beam;100
+260;Parasect;Bug Bite;Cross Poison;111
+263;Parasect;Fury Cutter;Cross Poison;111
+262;Parasect;Bug Bite;Solar Beam;114
+265;Parasect;Fury Cutter;Solar Beam;114
+261;Parasect;Bug Bite;X-Scissor;115
+264;Parasect;Fury Cutter;X-Scissor;115
+658;Tangela;Vine Whip;Power Whip;118
+660;Tangela;Vine Whip;Solar Beam;118
