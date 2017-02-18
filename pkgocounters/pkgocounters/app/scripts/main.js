@@ -115,7 +115,7 @@ $(document).ready(function(){
 //	defenders.column(4).search("Yes");
 	//defenders.column(1).search("Zen");
 
-	defenders2 = $('#table_defenders2').DataTable({
+	var defenders2 = $('#table_defenders2').DataTable({
 		ajax: {
 			url: 'json/empty.json',
 			dataSrc: ''
