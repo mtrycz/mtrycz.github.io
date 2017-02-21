@@ -1,4 +1,4 @@
-$(document).ready(function(){ 
+$(document).ready(function(){
 
 	var isMobile = window.matchMedia("handheld").matches;
 
@@ -8,12 +8,13 @@ $(document).ready(function(){
 			dataSrc: ''
 		},
 		columns: [
-		          {data: "defendername"},
-		          {data: "defenderfastmove", "searchable": true, orderable: false},
-		          {data: "defenderspecialmove", "searchable": true, orderable: false},
+		          {data: "n"},
+		          {data: "f", "searchable": true, orderable: false},
+		          {data: "s", "searchable": true, orderable: false},
 		          {data: "won", "searchable": false, "orderSequence": [ "desc" ]},
-		          {data: "defenderavailable", visible: false},
-		          {data: "defenderevolutions", visible: false}
+		          {data: "a", visible: false},
+		          {data: "e", visible: false},
+		          {data: "cp"}
 		          ],
 		searchCols: [
 		             null,
@@ -21,7 +22,8 @@ $(document).ready(function(){
 		             null,
 		             null,
 		             {"search": "false"},
-		             {"search": "0"}
+		             {"search": "0"},
+		             null
 		             ],
 		          paging: false,
 		          ordering: true,
@@ -38,15 +40,16 @@ $(document).ready(function(){
 			dataSrc: ''
 		},
 		columns: [
-		          {data: "rank", orderable: false},
-		          {data: "attackername", orderable: true},
-		          {data: "attackerfastmove", "searchable": false, orderable: false},
-		          {data: "attackerspecialmove", "searchable": false, orderable: false},
+		          {data: "r", orderable: false},
+		          {data: "n", orderable: true},
+		          {data: "f", "searchable": false, orderable: false},
+		          {data: "s", "searchable": false, orderable: false},
 		          {data: "hpleft", "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
-		          {data: "hpleftpercent",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
-		          {data: "timetozerohp",  "searchable": false, orderable: true, "orderSequence": [ "asc" ]},
-		          {data: "attackeravailable", visible: false, orderable: false},
-		          {data: "attackerevolutions", visible: false, orderable: false}
+		          {data: "hpleftp",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
+		          {data: "time",  "searchable": false, orderable: true, "orderSequence": [ "asc" ]},
+		          {data: "a", visible: false, orderable: false},
+		          {data: "r", visible: false, orderable: false},
+		          {data: "cp", visible: true},
 		          ],
 		  		searchCols: [
 				             null,
@@ -58,6 +61,7 @@ $(document).ready(function(){
 				             null,
 				             {"search": "false"},
 				             {"search": "0"},
+				             null
 				             ],
 		          paging: false,
 		          "ordering": true,
@@ -91,12 +95,13 @@ $(document).ready(function(){
 			dataSrc: ''
 		},
 		columns: [
-		          {data: "attackername"},
-		          {data: "attackerfastmove", "searchable": true, orderable: false},
-		          {data: "attackerspecialmove", "searchable": true, orderable: false},
+		          {data: "n"},
+		          {data: "f", "searchable": true, orderable: false},
+		          {data: "s", "searchable": true, orderable: false},
 		          {data: "won", "searchable": false, "orderSequence": [ "desc" ]},
-		          {data: "attackeravailable", visible: false},
-		          {data: "attackerevolutions", visible: false}
+		          {data: "a", visible: false},
+		          {data: "e", visible: false},
+		          {data: "cp"}
 		          ],
 		  		searchCols: [
 				             null,
@@ -104,7 +109,8 @@ $(document).ready(function(){
 				             null,
 				             null,
 				             {"search": "false"},
-				             {"search": "0"}
+				             {"search": "0"},
+				             null
 				             ],
 		          paging: false,
 		          ordering: true,
@@ -121,15 +127,16 @@ $(document).ready(function(){
 			dataSrc: ''
 		},
 		columns: [
-		          {data: "rank", orderable: true},
-		          {data: "defendername", orderable: true},
-		          {data: "defenderfastmove", "searchable": false, orderable: false},
-		          {data: "defenderspecialmove", "searchable": false, orderable: false},
+		          {data: "r", orderable: true},
+		          {data: "n", orderable: true},
+		          {data: "f", "searchable": false, orderable: false},
+		          {data: "s", "searchable": false, orderable: false},
 		          {data: "hpleft", "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
-		          {data: "hpleftpercent",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
-		          {data: "timetozerohp",  "searchable": false, orderable: true, "orderSequence": [ "asc" ]},
-		          {data: "defenderavailable", visible: false, orderable: false},
-		          {data: "defenderevolutions", visible: false, orderable: false}
+		          {data: "hpleftp",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
+		          {data: "time",  "searchable": false, orderable: true, "orderSequence": [ "asc" ]},
+		          {data: "a", visible: false, orderable: false},
+		          {data: "e", visible: false, orderable: false},
+		          {data: "cp"}
 		          ],
 		searchCols: [
 		             null,
@@ -141,6 +148,7 @@ $(document).ready(function(){
 		             null,
 		             {"search": "false"},
 		             {"search": "0"},
+		             null
 		             ],
 		          paging: false,
 		          "ordering": true,
