@@ -12,18 +12,18 @@ $(document).ready(function(){
 		          {data: "f", "searchable": true, orderable: false},
 		          {data: "s", "searchable": true, orderable: false},
 		          {data: "won", "searchable": false, "orderSequence": [ "desc" ]},
+		          {data: "cp"},
 		          {data: "a", visible: false},
-		          {data: "e", visible: false},
-		          {data: "cp"}
+		          {data: "e", visible: false}
 		          ],
 		searchCols: [
 		             null,
 		             null,
 		             null,
 		             null,
+		             null,
 		             {"search": "false"},
-		             {"search": "0"},
-		             null
+		             {"search": "0"}
 		             ],
 		          paging: false,
 		          ordering: true,
@@ -47,9 +47,9 @@ $(document).ready(function(){
 		          {data: "hpleft", "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
 		          {data: "hpleftp",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
 		          {data: "time",  "searchable": false, orderable: true, "orderSequence": [ "asc" ]},
+		          {data: "cp"},
 		          {data: "a", visible: false, orderable: false},
-		          {data: "r", visible: false, orderable: false},
-		          {data: "cp", visible: true},
+		          {data: "e", visible: false, orderable: false}
 		          ],
 		  		searchCols: [
 				             null,
@@ -59,9 +59,9 @@ $(document).ready(function(){
 				             null,
 				             null,
 				             null,
+				             null,
 				             {"search": "false"},
-				             {"search": "0"},
-				             null
+				             {"search": "0"}
 				             ],
 		          paging: false,
 		          "ordering": true,
@@ -80,9 +80,9 @@ $(document).ready(function(){
 		$('#table_attackers_filter').css("visibility", "visible")
 		var row = defenders.row(indexes[0]).data();
 		if (isMobile)
-			defenders.columns([0, 1, 2]).data().search(row.defendername+" "+ row.defenderfastmove +" "+ row.defenderspecialmove).draw();
+			defenders.columns([0, 1, 2]).data().search(row.n+" "+ row.f +" "+ row.s).draw();
 		attackers.clear().draw();
-		var name = "json/"+ row.defendername +"_"+ row.defenderfastmove +"_"+ row.defenderspecialmove +".json";
+		var name = "json/"+ row.n +"_"+ row.f +"_"+ row.s +".json";
 		attackers.ajax.url(name).load(function() {attackers.columns.adjust().draw()});
 		;
 	});
@@ -100,8 +100,7 @@ $(document).ready(function(){
 		          {data: "s", "searchable": true, orderable: false},
 		          {data: "won", "searchable": false, "orderSequence": [ "desc" ]},
 		          {data: "a", visible: false},
-		          {data: "e", visible: false},
-		          {data: "cp"}
+		          {data: "e", visible: false}
 		          ],
 		  		searchCols: [
 				             null,
@@ -109,8 +108,7 @@ $(document).ready(function(){
 				             null,
 				             null,
 				             {"search": "false"},
-				             {"search": "0"},
-				             null
+				             {"search": "0"}
 				             ],
 		          paging: false,
 		          ordering: true,
@@ -135,8 +133,7 @@ $(document).ready(function(){
 		          {data: "hpleftp",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
 		          {data: "time",  "searchable": false, orderable: true, "orderSequence": [ "asc" ]},
 		          {data: "a", visible: false, orderable: false},
-		          {data: "e", visible: false, orderable: false},
-		          {data: "cp"}
+		          {data: "e", visible: false, orderable: false}
 		          ],
 		searchCols: [
 		             null,
@@ -147,8 +144,7 @@ $(document).ready(function(){
 		             null,
 		             null,
 		             {"search": "false"},
-		             {"search": "0"},
-		             null
+		             {"search": "0"}
 		             ],
 		          paging: false,
 		          "ordering": true,
@@ -165,9 +161,9 @@ $(document).ready(function(){
 		$('#table_attackers2_filter').css("visibility", "visible")
 		var row = attackers2.row(indexes[0]).data();
 		if (isMobile)
-			attackers2.columns([0, 1, 2]).data().search(row.attackername+" "+ row.attackerfastmove +" "+ row.attackerspecialmove).draw();
+			attackers2.columns([0, 1, 2]).data().search(row.n+" "+ row.f +" "+ row.s).draw();
 		defenders2.clear().draw();
-		var name = "json/attackers/"+ row.attackername +"_"+ row.attackerfastmove +"_"+ row.attackerspecialmove +".json";
+		var name = "json/attackers/"+ row.n +"_"+ row.f +"_"+ row.s +".json";
 		defenders2.ajax.url(name).load(function() {defenders2.columns.adjust().draw()});
 		;
 	});
