@@ -12,7 +12,7 @@ $(document).ready(function(){
 		          {data: "f", "searchable": true, orderable: false},
 		          {data: "s", "searchable": true, orderable: false},
 		          {data: "won", "searchable": false, "orderSequence": [ "desc" ]},
-		          {data: "cp"},
+		          {data: "cp", "orderSequence": [ "desc" ]},
 		          {data: "a", visible: false},
 		          {data: "e", visible: false}
 		          ],
@@ -47,11 +47,13 @@ $(document).ready(function(){
 		          {data: "hpleft", "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
 		          {data: "hpleftp",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
 		          {data: "time",  "searchable": false, orderable: true, "orderSequence": [ "asc" ]},
-		          {data: "cp"},
+		          {data: "cp", "orderSequence": [ "desc" ]},
+		          {data: "pr", "orderSequence": [ "desc" ]},
 		          {data: "a", visible: false, orderable: false},
 		          {data: "e", visible: false, orderable: false}
 		          ],
 		  		searchCols: [
+				             null,
 				             null,
 				             null,
 				             null,
@@ -99,10 +101,14 @@ $(document).ready(function(){
 		          {data: "f", "searchable": true, orderable: false},
 		          {data: "s", "searchable": true, orderable: false},
 		          {data: "won", "searchable": false, "orderSequence": [ "desc" ]},
+		          {data: "cp", "orderSequence": [ "desc" ]},
+		          {data: "pr", "orderSequence": [ "desc" ]},
 		          {data: "a", visible: false},
 		          {data: "e", visible: false}
 		          ],
 		  		searchCols: [
+				             null,
+				             null,
 				             null,
 				             null,
 				             null,
@@ -127,12 +133,12 @@ $(document).ready(function(){
 		columns: [
 		          {data: "r", orderable: true},
 		          {data: "n", orderable: true},
-		          {data: "cp", orderable: true},
 		          {data: "f", "searchable": false, orderable: false},
 		          {data: "s", "searchable": false, orderable: false},
 		          {data: "hpleft", "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
 		          {data: "hpleftp",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
 		          {data: "time",  "searchable": false, orderable: true, "orderSequence": [ "asc" ]},
+		          {data: "cp", orderable: true},
 		          {data: "a", visible: false, orderable: false},
 		          {data: "e", visible: false, orderable: false}
 		          ],
