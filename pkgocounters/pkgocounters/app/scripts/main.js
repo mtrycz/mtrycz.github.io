@@ -13,7 +13,7 @@ $(document).ready(function(){
 		          {data: "s", "searchable": true, orderable: false},
 		          {data: "won", "orderSequence": [ "desc" ]},
 		          {data: "cp", "orderSequence": [ "desc" ]},
-		          {data: "woncp", "searchable": false, "orderSequence": [ "asc" ]},
+		          {data: "woncp", "searchable": false, "orderSequence": [ "desc" ]},
 		          {data: "a", visible: false},
 		          {data: "e", visible: false}
 		          ],
@@ -141,11 +141,13 @@ $(document).ready(function(){
 		          {data: "hpleftp",  "searchable": false, orderable: true, "orderSequence": [ "desc" ]},
 		          {data: "time",  "searchable": false, orderable: true, "orderSequence": [ "asc" ]},
 		          {data: "cp", orderable: true},
+		          {data: "pr", orderable: true, "orderSequence": [ "desc" ]},
 		          {data: "dr", visible: false, orderable: true},
 		          {data: "a", visible: false, orderable: false},
 		          {data: "e", visible: false, orderable: false}
 		          ],
 		searchCols: [
+		             null,
 		             null,
 		             null,
 		             null,
